@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.box img {
+  width: 100%;
+}
+
+.header {
+  background-color: rgb(24, 78, 131);
+  color: white;
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.asidebar {
+  background-color: #cdcdcd;
+  grid-area: asidebar;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.titulo-asidebar {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.categorias-asidebar {
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gallery {
+  background-color: #cdcdcd;
+  grid-area: gallery;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: scroll;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  height: 44vh;
+  margin: 4px;
+}
+
+.card img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  padding: 5px;
+}
+
+.nombre-producto {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.precio-producto {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.footer {
+  background-color: darkcyan;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+}
+
+.texto-footer {
+  color: white;
+}
+
+.btnComprar {
+  background-color: rgb(24, 78, 131);
+  color: white;
+  width: 100%;
+  border: 0;
+  padding: 0.5rem;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 12fr 1fr;
+  grid-template-areas:
+    "header header"
+    "asidebar gallery"
+    "footer footer";
+  height: 100vh;
+}
